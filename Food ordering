@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Food Ordering System</title>
+  <style>
+    /* Some basic styling for demonstration purposes */
+    /* You can enhance this with your own styles or frameworks like Bootstrap */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://tse3.mm.bing.net/th?id=OIP.NqqGvPC6uF76inr6tGld8QHaEK&pid=Api&P=0&h=180');
+      /* Other background properties to enhance visuals */
+      background-size: cover; /* Adjusts the background image size */
+      background-position: center; /* Centers the background image */
+      background-repeat: no-repeat; /* Prevents image repetition */
+    }
+    .container {
+      width: 300px;
+      margin: 100px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8); /* To provide a semi-transparent background to the login form */
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      background: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Login</h2>
+    <form action="login_process.php" method="post">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+
+      <input type="submit" value="Login">
+    </form>
+  </div>
+
+</body>
+</html>
